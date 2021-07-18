@@ -1,0 +1,42 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+add_pays:
+  path: /add_pays
+  controller: App\Controller\PaysController::add
+
+add_auteurs:
+  path: /add_auteurs
+  controller: App\Controller\AuteurController::add
+
+add_livres:
+  path: /add_livres
+  controller: App\Controller\LivreController::add
+
+show_auteur:
+  path: /show_auteur/{id}
+  controller: App\Controller\AuteurController::show
+  requirements:
+    id: '\d+'
+
+show_all_auteurs:
+  path: /show_all_auteurs
+  controller: App\Controller\AuteurController::showAll
+
+
+
+show_livre:
+  path: /show_livre/{id}
+  controller: App\Controller\LivreController::show
+  requirements:
+    id: '\d+'
+
+show_all_livres:
+  path: /show_all_livres
+  controller: App\Controller\LivreController::showAll
+
+new_auteur:
+  path: /new_auteur
+  controller: App\Controller\AuteurController::new
+  

@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<h1 class="pt-6 text-center uppercase font-bold text-xl "> Voici la liste des auteurs : </h1>
+<table class=" pt-6 grid justify-items-center" >
+    {% for auteur in auteurs %}
+    <tr >
+        <td class="px-3 "> <strong>Nom: </strong>{{ auteur.nom }} </td>
+        <td class="px-3 "> <strong>Prénom: </strong>{{ auteur.prenom }} </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

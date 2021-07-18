@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Livre{% endblock %}
+
+{% block body %}
+    <h1 class="pt-6 pb-6 text-center uppercase font-bold text-xl">Create new Livre</h1>
+
+    {{ include('livre/_form.html.twig') }}
+    <div class="flex justify-center">
+        <a class=" no-underline bg-purple-800 rounded-full  p-1 text-white text-center" href="{{ path('livre_index') }}">back to list</a>
+    </div>
+{% endblock %}

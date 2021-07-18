@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Affichage d'un auteur {% endblock %}
+
+{% block body %}
+<h1 class="pt-6 text-center uppercase font-bold text-xl "> Voici l'auteur choisi : </h1>
+
+<p class=" pt-6 text-center "><strong>Nom</strong> : {{ auteur.nom }}</p>
+<p class=" pt-6 text-center "><strong>Prénom</strong>: {{ auteur.prenom }}</p>
+
+
+{% endblock %}

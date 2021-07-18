@@ -1,0 +1,14 @@
+{% block title %} Liste des livres {% endblock %}
+
+{% block body %}
+<h1> Voici la liste des livres : </h1>
+<table>
+    {% for livre in livres %}
+        <tr>
+            <td>{{ livre.titre }} </td>
+            <td>{{ livre.dateparution }} </td>
+        </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}
